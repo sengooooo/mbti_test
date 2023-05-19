@@ -39,6 +39,11 @@
         <div class="result-btn">
             <button id="replay" type="button" class="btn btn-warning" onclick="window.location.reload()">다시하기</button>
             <button id="copy" type="button" class="btn btn-warning mt-4" role="alert" onclick="copy()">링크복사</button>
+            <a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
+                <button type="button" class="btn btn-warning mt-4" style="width: 100%;">
+                    공유하기
+                </button>
+            </a>
         </div>
     </div>
 
@@ -57,10 +62,7 @@
     <script>
     Kakao.init('46318c6acb9691226b95bc764d858675'); // 사용하려는 앱의 JavaScript 키 입력
     </script>
-    <a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
-    <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
-    alt="카카오톡 공유 보내기 버튼" />
-    </a>
+    
 
     <script>
     function shareMessage() {
